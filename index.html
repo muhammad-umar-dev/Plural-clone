@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="jsfile.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="bg-[#171a21] flex">
+      <div class="flex w-full py-4 md: px-16 px-8 items-center justify-between">
+        <nav class="flex items-center w-full">
+          <!-- logo -->
+          <div class="items-start w-28 px-4">
+            <a><img src="./logo.svg" alt="" /></a>
+          </div>
+          <!-- Primary nav -->
+          <div class="hidden lg:inline-flex items-center">
+            <a
+              class="text-slate-300 px-4 text-base hover:underline hover:text-white"
+              href="#"
+              >Marketplace</a
+            ><a
+              class="text-slate-300 px-4 text-base hover:underline hover:text-white"
+              href="#"
+              >Platform</a
+            >
+            <div
+              class="relative inline-flex items-end text-slate-300 px-4 text-base hover:underline hover:text-white group"
+              href="#"
+            >
+              Solutions
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="4"
+                stroke="currentColor"
+                class="w-4 h-4 ml-1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+              <!-- DropDown -->
+              <div
+                class="absolute flex top-8 z-10 flex-col w-30 h-36 bg-slate-700 py-3 px-4 border-slate-300 rounded bottom-0 invisible group-hover:visible delay-75"
+              >
+                <a
+                  class="text-slate-300 px-4 py-2 text-base hover:underline hover:text-white"
+                  href="#"
+                  >Data</a
+                ><a
+                  class="text-slate-300 px-4 py-2 text-base hover:underline hover:text-white"
+                  href="#"
+                  >DevOps</a
+                ><a
+                  class="text-slate-300 px-4 py-2 text-base hover:underline hover:text-white"
+                  href="#"
+                  >Security</a
+                >
+              </div>
+            </div>
+
+            <a
+              class="text-slate-300 px-4 text-base hover:underline hover:text-white"
+              href="#"
+              >Pricing</a
+            ><a
+              class="text-slate-300 px-4 text-base hover:underline hover:text-white"
+              href="#"
+              >Blog</a
+            ><a
+              class="text-slate-300 px-4 text-base hover:underline hover:text-white"
+              href=""
+              >Docs</a
+            >
+          </div>
+        </nav>
+        <!-- Secondary Nav -->
+        <nav class="hidden lg:inline-flex items-center justify-items-center">
+          <a
+            class="text-white px-2 w-12 h-12 rounded-full hover:bg-slate-800"
+            href="#"
+            ><div class="mt-2.5 ml-1">
+              <img class="justify-center w-6 h-6" src="./navDiscord.svg" /></div
+          ></a>
+          <a class="text-white px-1 justify-center" href="#">
+            <div class="py-1.5">
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true"
+                frameborder="0"
+                scrolling="0"
+                width="120"
+                height="20"
+                align-items="center"
+                title="GitHub"
+              ></iframe></div></a
+          ><a class="text-white px-1" href="#">
+            <button
+              class="bg-[#4a51f2] w-28 h-10 rounded text-white hover:bg-blue-400"
+            >
+              Get Started
+            </button></a
+          >
+        </nav>
+        <!-- Navbutton mobile -->
+        <div class="flex items-center justify-center">
+          <div
+            class="lg:hidden md:flex bg-slate-700 w-10 h-10 rounded flex p-2 items-center"
+          >
+            <button
+              onclick="myFunction()"
+              id="mobile-menu-button"
+              class="mobile-menu-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu hidden py-6 bg-slate-800 justify-center">
+      <a class="block text-slate-400 px-4 py-1.5 font-Inter text-sm">PRODUCT</a>
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Marketplace</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Plateform</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Pricing</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Get Started</a
+      >
+      <a class="block text-slate-400 px-4 py-1.5 font-Inter text-sm"
+        >SOLUTIONS</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Data</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >DevOps</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Security</a
+      >
+      <a class="block text-slate-400 px-4 py-1.5 font-Inter text-sm"
+        >RESOURCES</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Blog</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Community</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Docs</a
+      >
+      <a
+        class="block text-slate-300 px-5 py-6 font-Inter text-base hover:underline hover:text-white"
+        href="#"
+        >Star us on GitHub</a
+      >
+    </nav>
+
+    <section class="main">
+      <!-- Background Gradient -->
+      <div class="bg-gradient-to-r from-[#171a21] to-slate-800">
+        <!-- 1 Hero Section -->
+        <section
+          class="bg-[url(./bg1.png)] bg-no-repeat bg-right-top lg:mx-auto lg:w-full lg:flex justify-around md:mx-auto md:w-full md:block mx-auto w-full block box-border"
+        >
+          <div
+            class="container reletive mx-auto lg:flex lg:px-14 px-4 lg:mt-32"
+          >
+            <div class="py-6"></div>
+            <!-- Left Section -->
+            <div
+              class="place-content-center mx-auto lg:max-w-[520px] lg:flex lg:justify-items-start lg:flex-col md:w-full md:block w-full block"
+            >
+              <h5
+                class="font-Inter font-bold text-white lg:leading-tight lg:text-5xl lg:text-left md:text-center md:text-3xl pt-28 text-3xl pt-2 text-center"
+              >
+                Deploy, maintain, and scale the open-source applications you
+                love.
+              </h5>
+              <p
+                class="font-Inter font-normal text-[#9095a2] text-lg py-8 lg:text-left md:text-center text-center"
+              >
+                Plural is reliable infrastructure that just works. Deploy in
+                your cloud, and get started in minutes.
+              </p>
+              <div class="lg:text-left md:text-center text-center">
+                <button
+                  class="bg-[#4a51f2] lg:w-32 w-32 h-12 rounded text-white hover:bg-blue-400"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <!-- Right Section -->
+            <div
+              class="justify-center lg:flex lg:flex-wrap md:w-full md:flex w-full"
+            >
+              <img
+                class="lg:py-0 lg:max-w-[569px] py-8 md:max-w-full"
+                src="./txtimg.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <!-- 2 Section -->
+        <div class="lg:pt-32 pt-6"></div>
+        <section class="mx-auto w-full inline-flex lg justify-center">
+          <div class="w-full flex items-center justify-center">
+            <p
+              class="font-Inter font-normal text-center text-[#9095a2] text-sm"
+            >
+              USED BY FAST-MOVING TEAMS AT
+            </p>
+          </div>
+        </section>
+
+        <!-- 3 Icon Grid Section -->
+        <div class="lg:pt-2 pt-8"></div>
+        <section
+          class="w-full flex flex-col items-center lg:px-40 md:px-10 px-10"
+        >
+          <div
+            class="grid lg:grid-cols-4 gap-8 grid-cols-2 items-center lg: m-w-10/12 md:w-4/5 md:p-8"
+          >
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[80%] md:max-w-[70%] max-w-[60%]"
+                src="./asst1.png"
+                alt=""
+            /></a>
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[80%] md:max-w-[70%] max-w-[60%]"
+                src="./asst2.png"
+                alt=""
+            /></a>
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[80%] md:max-w-[70%] max-w-[60%]"
+                src="./asst3.png"
+                alt=""
+            /></a>
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[80%] md:max-w-[70%] max-w-[60%]"
+                src="./asst4.png"
+                alt=""
+            /></a>
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[80%] md:max-w-[70%] max-w-[60%]"
+                src="./asst5.png"
+                alt=""
+            /></a>
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[80%] md:max-w-[70%] max-w-[60%]"
+                src="./asst6.png"
+                alt=""
+            /></a>
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[60%] md:max-w-[70%] max-w-[60%]"
+                src="./asst7.svg"
+                alt=""
+            /></a>
+            <a
+              class="flex items-center justify-center object-cover max-w-[auto] h-[auto]"
+              ><img
+                class="flex lg:max-w-[60%] md:max-w-[70%] max-w-[60%]"
+                src="./asst9.svg"
+                alt=""
+            /></a>
+          </div>
+        </section>
+
+        <!-- 4 Section -->
+        <div class="lg:pt-40 pt-20"></div>
+        <section class="flex justify-center lg:mx-56 px-4">
+          <div class="align-center justify-center">
+            <h2
+              class="font-Inter md:text-4xl text-3xl font-bold text-white text-center leading-snug"
+            >
+              Bring your cloud, we'll handle the rest
+            </h2>
+            <p
+              class="font-Inter font-extralight text-[#9095a2] lg:tracking-wider tracking-wide md:text-xl text-lg text-center py-7"
+            >
+              Made for your cloud, for projects big and small. Plural is the
+              platform that takes the complexity out of building great
+              infrastructure.
+            </p>
+          </div>
+        </section>
+
+        <!-- 5 Section -->
+        <div class="lg:pt-32 pt-12"></div>
+        <section
+          class="lg:mx-auto lg:w-full lg:flex lg:px-24 md:mx-auto md:w-full md:block md:px-8 mx-auto w-full block px-4 justify-center"
+        >
+          <!-- Left Section -->
+          <div
+            class="lg:max-w-[540px] lg:flex lg:flex-wrap md:w-full md:flex w-full block"
+          >
+            <img
+              class="lg:py-0 lg:max-w-[569px] py-8 md:max-w-full"
+              src="./displayimg.png"
+              alt=""
+            />
+          </div>
+          <!-- Right Section -->
+          <div class="lg:pt-0 pt-4"></div>
+          <div
+            class="mx-auto lg:max-w-[540px] lg:flex lg:flex-wrap md:w-full md:block"
+          >
+            <h3
+              class="font-Inter text-white text-xl font-semibold leading-snug lg:text-left lg:py-2 py-3 md:text-center text-center"
+            >
+              No vendor lock-in
+            </h3>
+            <p
+              class="font-Inter font-light text-base text-[#9095a2] text-lg leading-6 lg:text-left md:text-center text-center"
+            >
+              Configurations and deployment are fully ejectable from Plural.
+              Walk away anytime. Everything stays running, no hard feelings.
+            </p>
+
+            <h3
+              class="font-Inter text-white text-xl font-semibold leading-snug lg:text-left lg:py-2 py-5 md:text-center text-center"
+            >
+              Batteries included
+            </h3>
+            <p
+              class="font-Inter font-light text-base text-[#9095a2] text-lg leading-6 lg:text-left md:text-center text-center"
+            >
+              Plural jumpstarts your OSS stack with baked-in observability,
+              logging, auditing, and user authentication.
+            </p>
+
+            <h3
+              class="font-Inter text-white text-xl font-semibold leading-snug lg:text-left lg:py-2 py-5 md:text-center text-center"
+            >
+              Fully customizable
+            </h3>
+            <p
+              class="font-Inter font-light text-base text-[#9095a2] text-lg leading-6 lg:text-left md:text-center text-center"
+            >
+              No matter what your needs are, Plural allows you the ability to
+              have complete control over your own applications.
+            </p>
+            <div
+              class="flex text-white font-Inter hover:text-white hover:underline group py-8 justify-center"
+            >
+              <a href="#">Learn more </a>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.3"
+                stroke="currentColor"
+                class="w-6 h-6 ml-2 group-hover:translate-x-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6 Section -->
+        <div class="lg:pt-32 pt-12"></div>
+        <section
+          class="lg:mx-auto lg:w-full lg:flex lg:px-24 md:mx-auto md:w-full md:block md:px-8 mx-auto w-full block px-4 justify-center"
+        >
+          <!-- Left Section -->
+          <div
+            class="mx-auto max-w-[540px] lg:flex lg:flex-wrap md:w-full md:block"
+          >
+            <h3
+              class="font-Inter text-white text-xl font-semibold leading-snug lg:text-left py-3 md:text-center text-center"
+            >
+              Built-in observability
+            </h3>
+            <p
+              class="font-Inter font-light text-base text-[#9095a2] text-lg leading-6 lg:text-left md:text-center text-center"
+            >
+              Plural allows you to get right to the good stuff with beautiful
+              dashboards and comprehensive logs right out-of-the box.
+            </p>
+
+            <h3
+              class="font-Inter text-white text-xl font-semibold leading-snug lg:text-left py-3 md:text-center text-center"
+            >
+              Airtight security
+            </h3>
+            <p
+              class="font-Inter font-light text-base text-[#9095a2] text-lg leading-6 lg:text-left md:text-center text-center"
+            >
+              Secrets stored securely in one place. Operations audit trails.
+              Security scans. OpenID Connect.
+            </p>
+
+            <h3
+              class="font-Inter text-white text-xl font-semibold leading-snug lg:text-left py-3 md:text-center text-center"
+            >
+              Scale, don't stress
+            </h3>
+            <p
+              class="font-Inter font-light text-base text-[#9095a2] text-lg leading-6 lg:text-left md:text-center text-center"
+            >
+              Plural makes it easy to run complex operations and scale instances
+              through interactive, low-code runbooks.
+            </p>
+            <div
+              class="flex text-white font-Inter hover:underline group py-8 justify-center"
+            >
+              <a href="#">Learn more</a>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.3"
+                stroke="currentColor"
+                class="w-6 h-6 ml-2 group-hover:translate-x-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- Right Section -->
+          <div
+            class="lg:max-w-[540] lg:flex lg:flex-wrap md:w-full md:flex w-full block mx-auto"
+          >
+            <img
+              class="lg:py-0 lg:max-w-[569px] py-8 md:max-w-full"
+              src="./displayimg2.png"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <!-- 7 Section -->
+        <div class="lg:pt-32 pt-12"></div>
+        <div class="lg:pt-32 pt-12"></div>
+        <section
+          class="lg:mx-auto lg:w-full lg:flex lg:px-24 md:mx-auto md:w-full md:block md:px-8 mx-auto w-full block px-4 justify-center"
+        >
+          <!-- Left Section -->
+          <div
+            class="mx-auto max-w-[540px] lg:flex lg:flex-col md:w-full md:block"
+          >
+            <h2
+              class="font-Inter text-white lg:text-4xl text-3xl font-semibold leading-snug lg:text-left md:text-center text-center"
+            >
+              Discover over 50 open-source applications in our marketplace
+            </h2>
+            <p
+              class="font-Inter font-normal text-[#9095a2] py-8 lg:text-lg lg:text-left md:text-lg md:text-center text-lg text-center"
+            >
+              Start or extend your infrastructure in minutes.
+            </p>
+
+            <div
+              class="flex justify-center text-white font-Inter items-left hover:text-white hover:underline group"
+            >
+              <a href="#">Explore the marketplace</a>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.3"
+                stroke="currentColor"
+                class="w-6 h-6 ml-2 group-hover:translate-x-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- Right Section -->
+          <div
+            class="lg:max-w-[540] lg:flex lg:flex-wrap md:w-full py-10 md:flex w-full block mx-auto"
+          >
+            <img class="lg:max-w-[540]" src="./displayimg3.png" alt="" />
+          </div>
+        </section>
+        <!-- 8 Section -->
+        <div class="lg:pt-32 pt-12"></div>
+        <div class="lg:pt-32 pt-12"></div>
+        <section
+          class="lg:mx-auto lg:w-full lg:flex lg:px-24 md:mx-auto md:w-full md:block md:px-8 mx-auto w-full block px-4 justify-center"
+        >
+          <div class="align-center">
+            <div class="block">
+              <p
+                class="font-Inter font-semibold text-white text-center leading-snug tracking-tight xl:text-5xl lg: text-5xl md: text-[2rem]"
+              >
+                Getting started with Plural stacks
+              </p>
+            </div>
+            <div class="block">
+              <p
+                class="font-Inter font-light tracking-wider leading-6 text-[#9095a2] text-lg text-center py-4"
+              >
+                These curated stacks of open-source software will ensure your
+                infrastructure is built with a strong foundation.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- 9 Section -->
+        <section
+          class="w-full lg:px-24 md:px-22 px-4 lg:inline-flex md:block justify-center"
+        >
+          <div
+            class="flex flex-col my-auto justify-left p-6 bg-slate-800 hover:bg-slate-700 rounded-lg border-[1px] border-[#99f5d5] lg:mr-8 mt-8 lg:w-96 md:w-full"
+          >
+            <h7
+              class="font-Inter font-bold text-white text-left leading-snug text-xl"
+            >
+              Data
+            </h7>
+            <p class="font-Inter font-light text-slate-400 text-sm text-left">
+              3 APPS
+            </p>
+            <div class="pt-3"></div>
+            <p
+              class="font-Inter font-normal text-slate-400 text-base h-16 text-left"
+            >
+              A curated stack of apps to help you integrate, orchestrate, and
+              analyze your data.
+            </p>
+
+            <div class="inline-flex pt-4">
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./superset.png" />
+              </div>
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./dagster.png" />
+              </div>
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./airbyte.png" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-left p-6 bg-slate-800 hover:bg-slate-700 rounded-lg border-[1px] border-[#4599c9] lg:mr-8 mt-8 lg:w-96 md:w-full"
+          >
+            <h7
+              class="font-Inter font-bold text-white text-left leading-snug text-xl"
+            >
+              Devops
+            </h7>
+            <p class="font-Inter font-light text-slate-400 text-sm text-left">
+              4 APPS
+            </p>
+            <div class="pt-3"></div>
+            <p
+              class="font-Inter font-normal text-slate-400 text-base h-16 text-left"
+            >
+              Everything you need to lay the foundation of your open-source
+              infrastructure.
+            </p>
+
+            <div class="inline-flex pt-4">
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./sentry.png" />
+              </div>
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./kubecost.png" />
+              </div>
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./grafana.png" />
+              </div>
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./argo-stacked-color-square.png" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-left p-6 bg-slate-800 hover:bg-slate-700 rounded-lg border-[1px] border-[#fff9c2] mt-8 lg:w-96 md:w-full"
+          >
+            <h7
+              class="font-Inter font-bold text-white text-left leading-snug text-xl"
+            >
+              Security
+            </h7>
+            <p class="font-Inter font-light text-slate-400 text-sm text-left">
+              3 APPS
+            </p>
+            <div class="pt-3"></div>
+            <p
+              class="font-Inter font-normal text-slate-400 text-base h-16 text-left"
+            >
+              Make sure your infrastructure is secure from the ground up—right
+              from day one.
+            </p>
+
+            <div class="inline-flex pt-4">
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./kubescape.png" />
+              </div>
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./vault-white.png" />
+              </div>
+              <div
+                class="w-8 h-8 bg-slate-900 p-2 rounded border-[1px] border-slate-600 mr-2"
+              >
+                <img src="./istio.png" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10 Section -->
+        <div class="lg:pt-32 pt-12"></div>
+        <div class="lg:pt-32 pt-12"></div>
+        <section
+          class="w-full lg:px-28 md:px-24 lg:inline-flex md:block px-4 justify-center"
+        >
+          <div
+            class="border-2 border-black 2xl:w-[1536px] 2xl:h-[768px] xl:w-[1280px] xl:h-[719px] lg:w-[1024px] lg:h-[575px] md:w-[768] md:h-[400px] sm:w-[640px] sm:h-[356px] w-full"
+          >
+            <iframe
+              class="w-full h-full"
+              src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FrGQ-Vzy8aso%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrGQ-Vzy8aso&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FrGQ-Vzy8aso%2Fhqdefault.jpg&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=youtube"
+              scrolling="no"
+              allowfullscreen="no"
+              title="Deploying Apache Airflow Using Plural"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+      <!-- 11 section Whiteoverlay -->
+      <div class="w-full bg-[#F9FAFB] -z-1 -mt-28 h-32"></div>
+      <div class="w-full bg-[#F9FAFB] -z-1">
+        <!-- 12 Section -->
+        <div class="lg:pt-32 pt-12"></div>
+        <section
+          class="lg:mx-auto lg:w-full lg:flex lg:px-20 md:mx-auto md:w-full md:block px-4 mx-auto w-full block"
+        >
+          <!-- Left Section -->
+          <div
+            class="lg:w-1/2 lg:flex lg:flex-col lg:justify-items-start lg:px-4 lg:items-left md:w-full md:flex md:flex-col md:justify-items-start md:p-4"
+          >
+            <h3
+              class="flex flex-wrap font-Inter text-black font-bold leading-snug lg:text-left items-center text-center lg-text-5xl text-[2rem]"
+            >
+              Loved by Data and DevOps Engineers
+            </h3>
+
+            <div
+              class="flex text-slate-900 font-Inter font-normal hover:text-black hover:underline group py-8 lg:text-left lg:items-left lg:justify-start md:flex md:justify-items-center"
+            >
+              <a href="#">Join our community on Discord</a>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.3"
+                stroke="currentColor"
+                class="w-6 h-6 ml-2 group-hover:translate-x-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- Right Section -->
+          <div
+            class="2xl:w-1/2 2xl:flex 2xl:flex-wrap 2xl:py-20 2xl:p-4 xl:w-1/2 xl:flex xl:flex-wrap xl:py-20 xl:p-4 lg:w-1/2 lg:flex lg:flex-wrap lg:py-20 lg:p-4 md:w-full md:block md:py-20 md:p-4"
+          ></div>
+        </section>
+
+        <!-- 13 Section -->
+        <div class="lg:pt-32 pt-12"></div>
+        <div class="lg:pt-32 pt-12"></div>
+        <section class="w-full flex flex-col lg:px-40 px-4">
+          <div class="block align-center justify-center lg:px-20 md:px-14 px-4">
+            <h5
+              class="font-Inter font-semibold text-black text-center leading-snug lg:text-5xl text-[32px]"
+            >
+              What's new
+            </h5>
+            <p
+              class="font-Inter font-light text-slate-900 text-xl text-center py-4"
+            >
+              Find out how Plural helped businesses reach their goals.
+            </p>
+          </div>
+        </section>
+        <!-- 14 Section -->
+        <div class="lg:pt-24 pt-12"></div>
+        <section
+          class="mx-auto grid lg:grid-cols-2 lg:gap-8 grid-cols-1 gap-8 w-full lg:px-20 lg:py-10 p-4"
+        >
+          <div
+            class="lg:w-full lg:p-5 md:w-ful justify-centerl p-3 border-[1px] border-[#d9dce2] rounded shadow-lg hover:shadow-2xl mx-3 px-4 py-3 max-w-[620px] md:max-w-full h-auto"
+          >
+            <button
+              class="bg-[#f0f0ff] w-auto h-6 text-3 text-[#5d626f] font-light rounded border-[1px] border-[383d47] py-0.5 px-2 text-sm"
+            >
+              Case Study
+            </button>
+            <h5
+              class="font-Inter font-semibold text-[#0e1015] text-left text-xl min-h-[56px] my-5"
+            >
+              How Cayena Went From Zero to Production in One Day With Plural
+            </h5>
+            <p
+              class="font-Inter font-light text-[#5d626f] text-left text-base text-ellipsis overflow-hidden min-w-auto min-h-[120px]"
+            >
+              Cayena is a Brazilian marketplace that connects food suppliers
+              with restaurants, bars, hotels, and kitchens. Here's why they
+              chose Plural
+            </p>
+            <a href="#">
+              <img
+                src="https://assets.website-files.com/627977f6bd85bbace4684726/62e8088d931a989fb60eafff_arrow-card.svg"
+                loading="lazy"
+                alt=""
+                class=""
+              />
+            </a>
+          </div>
+          <div
+            class="lg:full lg:p-5 md:w-ful justify-centerl p-3 border-[1px] border-[#d9dce2] rounded shadow-lg hover:shadow-2xl mx-3 px-4 py-3 max-w-[620px] md:max-w-full h-auto"
+          >
+            <button
+              class="bg-[#f0f0ff] w-auto h-6 text-3 text-[#5d626f] font-light rounded border-[1px] border-[383d47] py-0.5 px-2 text-sm"
+            >
+              Announcement
+            </button>
+            <h5
+              class="font-Inter font-semibold text-[#0e1015] min-h-[56px] text-left text-xl my-5"
+            >
+              Plural Stacks: Get Started With One Command
+            </h5>
+            <p
+              class="font-Inter font-light text-[#5d626f] text-left text-base text-ellipsis overflow-hidden min-w-auto min-h-[120px]"
+            >
+              This addition to our platform will help developers deploy
+              open-source infrastructure in a matter of minutes.
+            </p>
+            <a href="#">
+              <img
+                src="https://assets.website-files.com/627977f6bd85bbace4684726/62e8088d931a989fb60eafff_arrow-card.svg"
+                loading="lazy"
+                alt=""
+                class=""
+              />
+            </a>
+          </div>
+
+          <div
+            class="lg:w-full lg:p-5 md:w-ful justify-centerl p-3 border-[1px] border-[#d9dce2] rounded shadow-lg hover:shadow-2xl mx-3 px-4 py-3 max-w-[620px] md:max-w-full h-auto"
+          >
+            <button
+              class="bg-[#f0f0ff] w-auto h-6 text-3 text-[#5d626f] font-light rounded border-[1px] border-[383d47] py-0.5 px-2 text-sm"
+            >
+              Tutorials
+            </button>
+            <h5
+              class="font-Inter font-semibold text-[#0e1015] min-h-[56px] text-xl text-left my-5"
+            >
+              How We Created an In-Browser Kubernetes Experience
+            </h5>
+            <p
+              class="font-Inter font-light text-[#5d626f] text-left text-base text-ellipsis overflow-hidden min-w-auto min-h-[120px]"
+            >
+              Building an in-browser Kubernetes experience is a fairly unusual
+              product decision. Here's how and why we did it.
+            </p>
+            <a href="#">
+              <img
+                src="https://assets.website-files.com/627977f6bd85bbace4684726/62e8088d931a989fb60eafff_arrow-card.svg"
+                loading="lazy"
+                alt=""
+                class=""
+              />
+            </a>
+          </div>
+          <div
+            class="lg:w-full lg:p-5 md:w-ful justify-centerl p-3 border-[1px] border-[#d9dce2] rounded shadow-lg hover:shadow-2xl mx-3 px-4 py-3 max-w-[620px] md:max-w-full h-auto"
+          >
+            <button
+              class="bg-[#f0f0ff] w-auto h-6 text-3 text-[#5d626f] font-light rounded border-[1px] border-[383d47] py-0.5 px-2 text-sm"
+            >
+              Tutorials
+            </button>
+            <h5
+              class="font-Inter font-semibold text-[#0e1015] min-h-[56px] text-left text-xl my-5"
+            >
+              How to Build and ​​Operate an Open-Source Data Stack on Kubernetes
+            </h5>
+            <p
+              class="font-Inter font-light text-[#5d626f] text-left text-base text-ellipsis overflow-hidden min-w-auto min-h-[120px]"
+            >
+              This addition to our platform will help developers deploy
+              open-source infrastructure in a matter of minutes.
+            </p>
+            <a href="#">
+              <img
+                src="https://assets.website-files.com/627977f6bd85bbace4684726/62e8088d931a989fb60eafff_arrow-card.svg"
+                loading="lazy"
+                alt=""
+                class=""
+              />
+            </a>
+          </div>
+
+          <div
+            class="lg:w-full lg:p-5 md:w-ful justify-centerl p-3 border-[1px] border-[#d9dce2] rounded shadow-lg hover:shadow-2xl mx-3 px-4 py-3 max-w-[620px] md:max-w-full h-auto"
+          >
+            <button
+              class="bg-[#f0f0ff] w-auto h-6 text-3 text-[#5d626f] font-light rounded border-[1px] border-[383d47] py-0.5 px-2 text-sm"
+            >
+              Tutorials
+            </button>
+            <h5
+              class="font-Inter font-semibold text-[#0e1015] min-h-[56px] text-xl text-left my-5"
+            >
+              A Guide to Deploying Airflow on Kubernetes
+            </h5>
+            <p
+              class="font-Inter font-light text-[#5d626f] text-left text-base text-ellipsis overflow-hidden min-w-auto min-h-[120px]"
+            >
+              How to set up a fresh Kubernetes cluster and install Airflow onto
+              that cluster using Plural.
+            </p>
+            <a href="#">
+              <img
+                src="https://assets.website-files.com/627977f6bd85bbace4684726/62e8088d931a989fb60eafff_arrow-card.svg"
+                loading="lazy"
+                alt=""
+                class=""
+              />
+            </a>
+          </div>
+          <div
+            class="lg:w-full lg:p-5 md:w-ful justify-centerl p-3 border-[1px] border-[#d9dce2] rounded shadow-lg hover:shadow-2xl mx-3 px-4 py-3 max-w-[620px] md:max-w-full h-auto"
+          >
+            <button
+              class="bg-[#f0f0ff] w-auto h-6 text-3 text-[#5d626f] font-light rounded border-[1px] border-[383d47] py-0.5 px-2 text-sm"
+            >
+              Article
+            </button>
+            <h5
+              class="font-Inter font-semibold text-[#0e1015] min-h-[56px] text-left text-xl my-5"
+            >
+              The Future of DevOps is Open-Source
+            </h5>
+            <p
+              class="font-Inter font-light text-[#5d626f] text-left text-base text-ellipsis overflow-hidden min-w-auto min-h-[120px]"
+            >
+              Open-source software is growing in demand and is beginning to play
+              a pivotal role in the evolution of the DevOps toolkit.
+            </p>
+            <a href="#">
+              <img
+                src="https://assets.website-files.com/627977f6bd85bbace4684726/62e8088d931a989fb60eafff_arrow-card.svg"
+                loading="lazy"
+                alt=""
+                class=""
+              />
+            </a>
+          </div>
+        </section>
+        <div class="lg:pt-32 pt-12"></div>
+        <div class="lg:pt-32 pt-12"></div>
+      </div>
+
+      <!-- 15.1 Section -->
+      <div class="lg:pt-32 pt-16"></div>
+      <section
+        class="bg-gradient-to-r from-gray-900 to-slate-800 w-full lg:w-full lg:flex lg:px-20 md:mx-auto md:w-full md:block mx-auto w-full block px-4"
+      >
+        <div class=""></div>
+
+        <!-- Left Section -->
+        <div
+          class="lg:pt-16 pt-6 lg:w-1/2 lg:flex lg:flex-col md:w-full md:block"
+        >
+          <h3
+            class="font-Inter text-white lg:text-left lg:text-5xl md:text-center font-bold text-3xl text-center"
+          >
+            Build infrastructure within minutes.
+          </h3>
+          <div class="lg:pt-8 pt-7"></div>
+          <a
+            class="flex text-white py-4 lg:justify-start md:justify-center justify-center"
+            href="#"
+          >
+            <button
+              class="bg-[#4a51f2] w-32 h-11 rounded text-white hover:bg-blue-400"
+            >
+              Get Started
+            </button></a
+          >
+        </div>
+        <!-- Right Section -->
+        <div
+          class="lg:pt-16 pt-6 lg:w-1/2 lg:flex lg:flex-col lg:p-4 md:w-full md:block"
+        >
+          <div
+            class="lg:flex lg:flex-row md:flex md:flex-col md-w-full items-center"
+          >
+            <div
+              class="flex lg:h-20 lg:w-20 lg:items-left md:items-center justify-center"
+            >
+              <img
+                class="lg:h-20 lg:w-20 h-12 w-12 xl:-mt-10 lg:-mt-20"
+                src="./smilyicon.svg"
+                alt=""
+              />
+            </div>
+            <div class="lg:px-4">
+              <h3
+                class="font-Inter font-semibold text-white text-2xl leading-snug lg:text-left md:text-center text-center"
+              >
+                Fully open source
+              </h3>
+              <p
+                class="font-Inter font-wider text-slate-400 lg:text-lg text-base lg:text-left md:text-center text-center"
+              >
+                Plural was built with the community in mind from day one. We are
+                and will always be open source.
+              </p>
+            </div>
+          </div>
+          <div class="pt-8"></div>
+
+          <div class="lg:flex lg:mt-0 md: block md:items-center mt-5">
+            <div
+              class="flex lg:h-20 lg:w-20 lg:items-left md:items-center justify-center"
+            >
+              <img
+                class="lg:h-20 lg:w-20 h-12 w-12 lg:-mt-20"
+                src="./cloud.svg"
+                alt=""
+              />
+            </div>
+            <div class="lg:px-4">
+              <h3
+                class="font-Inter font-semibold text-white text-2xl leading-snug lg:text-left md:text-center text-center"
+              >
+                Built for the cloud
+              </h3>
+              <p
+                class="font-Inter font-wider text-slate-400 lg:text-lg text-base lg:text-left md:text-center text-center"
+              >
+                Use our simple GitOps driven workflow for deploying and managing
+                applications, and a centralized configuration in a single repo.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-8"></div>
+          <div class="lg:flex lg:mt-0 md: block md:items-center mt-5">
+            <div
+              class="flex lg:h-20 lg:w-20 lg:items-left md:items-center justify-center"
+            >
+              <img
+                class="lg:h-20 lg:w-20 h-12 w-12 xl:-mt-10 lg:-mt-20"
+                src="./developer.svg"
+                alt=""
+              />
+            </div>
+            <div class="lg:px-4">
+              <h3
+                class="font-Inter font-semibold text-white text-2xl leading-snug lg:text-left md:text-center text-center"
+              >
+                Developer friendly
+              </h3>
+              <p
+                class="font-Inter font-wider text-slate-400 lg:text-lg text-base lg:text-left md:text-center text-center"
+              >
+                Optimized for you to bring your own cloud and run on top of
+                Kubernetes with the ideal cluster distribution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Background end above -->
+    <!-- 16 Section -->
+    <footer class="bg-gradient-to-r from-gray-900 to-slate-800 w-full">
+      <!-- 16 Section -->
+      <div class="lg:pt-16 pt-16"></div>
+      <section>
+        <div
+          class="lg:flex lg:flex-row lg:justify-around lg-20 md:flex md:flex-col md:px-8 px-8 w-full"
+        >
+          <div class="flex flex-col">
+            <a
+              class="block text-slate-400 px-4 py-1.5 font-Inter text-sm lg:text-left md:text-center text-center"
+              >PRODUCT</a
+            >
+            <div class="pt-4"></div>
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Docs</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Marketplace</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Platform</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Pricing</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Get Started</a
+            >
+          </div>
+
+          <div class="flex flex-col">
+            <a
+              class="block text-slate-400 px-4 py-1.5 font-Inter text-sm lg:text-left md:text-center text-center"
+              >COMMUNITY</a
+            >
+            <div class="pt-4"></div>
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Community</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Discord</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Github</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >LinkedIn</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Twitter</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Youtube</a
+            >
+          </div>
+
+          <div class="flex flex-col">
+            <a
+              class="block text-slate-400 px-4 py-1.5 font-Inter text-sm lg:text-left md:text-center text-center"
+              >COMPANY</a
+            >
+            <div class="pt-4"></div>
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >About</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Blog</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Careers</a
+            >
+            <a
+              class="block text-slate-300 px-5 py-2 font-Inter text-base hover:underline hover:text-white lg:text-left md:text-center text-center"
+              href="#"
+              >Contact</a
+            >
+          </div>
+          <div class="flex flex-col">
+            <a
+              class="block text-slate-400 px-4 py-3 font-Inter text-sm lg:text-left md:text-center text-center"
+              >NEWSLETTER</a
+            >
+            <div class="pt-4"></div>
+            <a
+              class="block text-slate-300 px-5 py-0 font-Inter text-base text-whitelg:text-left md:text-center text-center"
+              href="#"
+              >Be the first to know when we drop something new</a
+            >
+            <div class="pt-4"></div>
+            <form action="#" class="lg:py-5 lg:px-5 md:px-1">
+              <div
+                class="w-full relative bg-transparent border-[1px] border-[black] focus:ring group/icon rounded inline-flex"
+              >
+                <div
+                  class="flex justify-items-center w-5/6 py-2 px-3 text-white"
+                >
+                  <input
+                    type="email"
+                    class="sub-form-input w-input bg-transparent outline-none group-focus/icon:border-blue-500"
+                    maxlength="256"
+                    name="Subscriber-Email-2"
+                    data-name="Subscriber Email 2"
+                    placeholder="Enter email"
+                    id="Subscriber-Email-2"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    value="➔"
+                    data-wait="Please wait..."
+                    class="submit-button w-button flex justify-items-center w-12 h-12 text-white"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="lg:pt-32 pt-16"></div>
+    </footer>
+  </body>
+</html>
